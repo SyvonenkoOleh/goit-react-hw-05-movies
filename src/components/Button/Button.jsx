@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { BtnElement } from './Button.styled';
 import { Spinner } from 'react-bootstrap';
-import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Btn = ({
+const Btn = ({
   text,
   status,
   icon: Icon = null,
@@ -20,7 +20,6 @@ export const Btn = ({
       onClick={onClick}
     >
       {Icon && <Icon></Icon>}
-
       {onLoaderPlay && (
         <Spinner
           as="span"
@@ -44,3 +43,5 @@ Btn.propTypes = {
   status: PropTypes.string,
   onClick: PropTypes.func,
 };
+
+export { Btn };
