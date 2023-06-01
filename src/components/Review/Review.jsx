@@ -15,7 +15,6 @@ const Review = () => {
   const { id } = useParams();
   const [reviews, setReviews] = useState(null);
 
-  // console.log(reviews);
   useEffect(() => {
     fetchMovie.getMovieReview(id).then(setReviews);
   }, [id]);

@@ -19,7 +19,6 @@ export const MovieList = ({ movies }) => {
                     : fetchMovie.defaultImg
                 }
                 alt={movie.title}
-                width="200"
               />
               <span>{movie.vote_average.toFixed(2)}</span>
             </Link>
