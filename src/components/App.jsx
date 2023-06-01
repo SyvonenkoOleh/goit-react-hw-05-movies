@@ -13,11 +13,11 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<StartPage />}>
-        <Route index element={<Home />} /> // Кореневий шлях з компонентом Home
-        <Route path="movies" element={<Movies />} /> // Шлях "movies" з компонентом Movies
+        <Route index element={<Home />} />
+        <Route path="movies" element={<Movies />} />
         <Route path="movies/:id" element={<MovieDetails />}>
-          <Route path="cast" element={<Cast />} /> // Вкладений шлях "cast" з компонентом Cast
-          <Route path="review" element={<Review />} /> // Вкладений шлях "review" з компонентом Review
+          <Route path="cast" element={<Cast />} />
+          <Route path="review" element={<Review />} />
         </Route>
       </Route>
     </Routes>
